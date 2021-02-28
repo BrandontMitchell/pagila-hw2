@@ -11,7 +11,7 @@
  * You may choose whichever solution makes the most sense to you.
  */
 
-select title from inventory
+select distinct(title) from inventory
 inner join film on inventory.film_id=film.film_id
 where film.film_id not in 
 (
